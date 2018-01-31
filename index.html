@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Website CSS style -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+
+
+		<title>Admin</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row main">
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<h1 class="title">La journée de la langue française</h1>
+	               		<hr />
+	               	</div>
+
+	               	<img src="logo.png" alt="#" class="img-responsive center-block">
+	            </div> 
+				<div class="main-login main-center">
+				<div class="well col-md12">
+						<p>Pour tous les amoureux de la langue de Molière , l'EPI vous organise "La Journée de la Langue Française".
+Parmi nos invités nous aurons l'honneur de recevoir Madame Marie Paul-Larif: responsable du centre de langue (Relais Culturel de Sousse) qui va représenter l'institut français de Tunisie, Ainsi que Monsieur Ammar Azzouzi professeur de linguistique française.
+Et pour joindre l'utile à l’agréable la journée comportera  un concours de dictée . Soyez donc prêts à tester vos connaissances! 
+Rendez-vous : Mercredi le 7 janvier à l'amphi 1. SOYEZ NOMBREUX ! Des cadeaux et des surprises vous attendent !</p>
+				</div>
+					<form id="signup" class="form-horizontal" method="post" action="addUser.php">
+						
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Nom</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="nom" id="name"  placeholder="Votre nom"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Prénom</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="prenom" id="prenom"  placeholder="Votre prénom"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Adresse E-mail</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="email" class="form-control" name="email" id="email"  placeholder="Votre Adresse Email"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Établissement</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="etab" id="etab"  placeholder=" Établissement"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Profession</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="prof" id="prof"  placeholder="votre Profession"/>
+								</div>
+							</div>
+						</div>
+
+						 
+
+						<div class="form-group ">
+							<button type="submit" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+						</div>
+						<div class="login-register">
+				            <a href="index.php">Login</a>
+				         </div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  <script src="assets/js/jquery.validate.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>
+
+		 <script type="text/javascript">
+		/* 	$.validator.setDefaults({
+		submitHandler: function() {
+			alert("submitted!");
+		}
+	});*/
+
+	$().ready(function() {
+		// validate the comment form when it is submitted
+		 
+
+		// validate signup form on keyup and submit
+		$("#signup").validate({
+			rules: {
+				 nom: {
+					required: true,
+					minlength: 2
+				},
+				prenom: {
+					required: true,
+					minlength: 2
+				},
+				etab: {
+					required: true,
+					minlength: 2
+				},
+				prof: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				 
+				nom: {
+					required: "veuillez saisir votre nom",
+					minlength: "veuillez saisire minimum 3 caracteres"
+				},
+				prenom: {
+					required: "veuillez saisir votre prénom",
+					minlength: "veuillez saisire minimum 3 caracteres"
+				},
+				etab: {
+					required: "veuillez saisir votre Etablissement",
+					minlength: "veuillez saisire minimum 3 caracteres"
+				},
+				prof: {
+					required: "veuillez saisir votre Profession",
+					minlength: "veuillez saisire minimum 3 caracteres"
+				},
+				 
+				email: "veuillez saisire une adresse Email Valide"
+				 
+			}
+		});
+
+
+
+
+});
+		 </script>
+
+
+
+
+	</body>
+
+
+
+
+
+</html>
